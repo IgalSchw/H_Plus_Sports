@@ -37,6 +37,7 @@ namespace H_Plus_Sports
 
             services.AddMvc();
 
+
             var connection = "Server=MAIN-PC\\SQLEXPRESS;Initial Catalog=H_Plus_Sports;Persist Security Info=False;User ID=Ninja;Password=258Ye707!;";
             services.AddDbContext<H_Plus_SportsContext>(options => options.UseSqlServer(connection));
         }
